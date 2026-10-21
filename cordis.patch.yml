@@ -1,0 +1,16 @@
+# dsh-enter-remap 配置文件
+#
+# 三个快捷键各自的行为，可选值：
+#   newline   换行（原生 Shift+Enter）
+#   send      发送行为（原生 Enter：忙时按「设置 → 通用 → 繁忙时的发送行为」排队/插话）
+#   busySend  繁忙时的发送行为（原生 Ctrl+Enter：忙时使用另一种投递方式）
+#
+# 修改后重启 DSH 生效。
+
+- insert:
+    - id: dsh-enter-remap
+      name: dsh-enter-remap
+      config:
+        enter: newline
+        ctrlEnter: send
+        shiftEnter: busySend

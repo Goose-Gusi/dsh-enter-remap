@@ -1,0 +1,56 @@
+{
+  "name": "dsh-enter-remap",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Remap Enter / Ctrl+Enter / Shift+Enter in the DSH composer: line break, send, busy-time send.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "keyboard",
+    "keymap",
+    "composer"
+  ],
+  "license": "MIT",
+  "author": "Goose-Gusi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goose-Gusi/dsh-enter-remap.git"
+  },
+  "homepage": "https://github.com/Goose-Gusi/dsh-enter-remap#readme",
+  "bugs": {
+    "url": "https://github.com/Goose-Gusi/dsh-enter-remap/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
