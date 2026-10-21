@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Enter Key Remap",
+    "description": "Remap Enter, Ctrl+Enter, and Shift+Enter between line break, send, and busy-time send."
+  }
+}

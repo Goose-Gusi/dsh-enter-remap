@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "回车键行为重映射",
+    "description": "把 Enter、Ctrl+Enter、Shift+Enter 分别映射为换行、发送或繁忙时发送。"
+  }
+}
