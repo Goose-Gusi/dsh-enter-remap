@@ -1,8 +1,8 @@
 {
   "name": "dsh-enter-remap",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
-  "description": "Remap Enter / Ctrl+Enter / Shift+Enter in the DSH composer: line break, send, busy-time send.",
+  "description": "Remap Enter / Ctrl+Enter / Shift+Enter in the DSH composer so its three native behaviors (line break, Enter-key send, Ctrl+Enter-key send) stay one per key; customizable in settings.",
   "keywords": [
     "dsh",
     "dsh-plugin",
@@ -47,7 +47,18 @@
     "client": {
       "platform": "web",
       "immediately": true,
-      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/schemastery": {
+      "optional": true
     }
   },
   "publishConfig": {

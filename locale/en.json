@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Enter Key Remap",
-    "description": "Remap Enter, Ctrl+Enter, and Shift+Enter between line break, send, and busy-time send."
+    "description": "Remap Enter, Ctrl+Enter, and Shift+Enter so the three native behaviors — line break, Enter-key send, and Ctrl+Enter-key send — stay one per key. Customizable in settings."
   }
 }

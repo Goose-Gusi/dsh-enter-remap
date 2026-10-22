@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "回车键行为重映射",
-    "description": "把 Enter、Ctrl+Enter、Shift+Enter 分别映射为换行、发送或繁忙时发送。"
+    "title": "Enter键重映射",
+    "description": "把 Enter、Ctrl+Enter、Shift+Enter 三键的发送与换行行为互相重映射，三种原生行为始终各占一键，可在设置中自定义。"
   }
 }
